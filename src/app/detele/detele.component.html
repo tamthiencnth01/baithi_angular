@@ -1,0 +1,16 @@
+<h2>Huỷ Bỏ Sách</h2>
+<form>
+    <div class="form-group">
+      <label for="title">Tên Sách:   </label><span>  {{ bookDto.title }}</span>
+    </div>
+  
+    <div class="form-group">
+        <label for="title">Tác Giả:   </label><span>  {{ bookDto.author }}</span>
+      </div>
+  
+      <div class="form-group">
+        <label for="title">Mô tả:   </label><span>  {{ bookDto.description }}</span>
+      </div>
+      <button (click)="deleteBooks(bookDto)"  class="btn btn-danger mr-2">Xoá</button>
+      <button routerLink="/list"  class="btn btn-danger">Thoát</button>
+</form>
